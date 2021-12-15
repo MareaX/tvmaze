@@ -1,7 +1,8 @@
-package com.ex.tvmaze
+package com.ex.tvmaze.mainModule
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ex.tvmaze.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

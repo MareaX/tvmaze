@@ -1,6 +1,22 @@
 <resources>
-    <string name="app_name">tvmaze</string>
+    <string name="app_name">TV Maze</string>
     <string name="description_img">Imagen</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Search_Text">Buscar</string>
+    <string name="show_info_title">Información de la serie</string>
+    <string name="ShowEntity_id">ShowEntity_id</string>
+    <string name="ShowEntity_url">ShowEntity_url</string>
+    <string name="ShowEntity_name">ShowEntity_name</string>
+    <string name="ShowEntity_genres">ShowEntity_genres</string>
+    <string name="ShowEntity_premiered">ShowEntity_premiered</string>
+    <string name="ShowEntity_rating">ShowEntity_rating</string>
+    <string name="ShowEntity_image">ShowEntity_image</string>
+    <string name="ShowEntity_summary">ShowEntity_summary</string>
+    <string name="title_info">Título:</string>
+    <string name="description_info">Descripción de la serie:</string>
+    <string name="generos_info">Géneros:</string>
+    <string name="rating_info">Rating:</string>
+    <string name="date_info">Fecha:</string>
+    <string name="webpage_info">Página Web:</string>
 </resources>

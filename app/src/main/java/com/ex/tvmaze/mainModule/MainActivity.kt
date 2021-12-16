@@ -12,7 +12,7 @@ import com.ex.tvmaze.databinding.ActivityMainBinding
 import com.ex.tvmaze.mainModule.adapter.OnClickListener
 import com.ex.tvmaze.mainModule.adapter.ShowAdapter
 import com.ex.tvmaze.mainModule.viewModel.MainViewModel
-import com.ex.tvmaze.serieInfoModule.ShowInfoFragment
+import com.ex.tvmaze.showInfoModule.ShowInfoFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

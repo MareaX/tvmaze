@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".serieInfoModule.ShowInfoFragment">
+    tools:context=".showInfoModule.ShowInfoFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

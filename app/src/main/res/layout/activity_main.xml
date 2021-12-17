@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/alterPrimaryLight"
     android:id="@+id/containerMain"
     tools:context=".mainModule.MainActivity">
 
@@ -17,6 +20,7 @@
         android:hint="@string/Search_Text"
         app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/common_padding_min"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:startIconDrawable="@drawable/ic_search">

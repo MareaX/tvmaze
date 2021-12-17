@@ -30,11 +30,11 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
-        setupRecylcerView()
+        setupRecyclerView()
     }
 
 
-    private fun setupRecylcerView() {
+    private fun setupRecyclerView() {
         mAdapter = ShowAdapter(this)
         //getStores()
         mBinding.recyclerView.apply {
@@ -47,7 +47,6 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         mMainViewModel.responseShow.observe(this, { shows ->
             mBinding.progressBar.visibility = if (shows.isEmpty()) View.VISIBLE else View.GONE
             mAdapter.shows = shows
-
         })
     }
 

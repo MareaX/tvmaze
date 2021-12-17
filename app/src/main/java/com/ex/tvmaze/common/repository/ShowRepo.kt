@@ -6,7 +6,7 @@ import javax.inject.Inject
 class ShowRepo @Inject
 constructor(private val apiService: ShowApiService) {
     suspend fun getShows() = apiService.getShows()
-
+    suspend fun getSeasons(id: Int) = apiService.getSeasons(id)
     suspend fun getEpisodes(id: Int) = apiService.getEpisodes(id)
 }
 

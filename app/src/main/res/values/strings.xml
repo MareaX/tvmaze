@@ -19,4 +19,10 @@
     <string name="rating_info">Rating:</string>
     <string name="date_info">Fecha:</string>
     <string name="webpage_info">Página Web:</string>
+    <string name="episodes_list">Temporadas</string>
+    <string name="SeasonEntity_id">SeasonEntity_id</string>
+    <string name="show_episodes_title">Episodios</string>
+    <string name="SeasonEntity_title">SeasonEntity_title</string>
+    <string name="episode_number">Número de episodio:</string>
+    <string name="episode_season">Temporada:</string>
 </resources>

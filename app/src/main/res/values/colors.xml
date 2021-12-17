@@ -7,4 +7,17 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="alterPrimary">#00695c</color>
+    <color name="alterPrimaryDark">#003d33</color>
+    <color name="alterPrimaryLight">#E1E2E1</color>
+    <color name="alterPrimaryLight2">#439889</color>
+    <color name="letterFirst">#ffffff</color>
+
+    <color name="alterSecundary">#009688</color>
+    <color name="alterSecundaryDark">#00675b</color>
+    <color name="alterSecundaryLight">#52c7b8</color>
+    <color name="letterSecundary">#000000</color>
+
+
 </resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="item_card_height">96dp</dimen>
+    <dimen name="item_episode_card_height">192dp</dimen>
     <dimen name="common_padding_less_min">4dp</dimen>
     <dimen name="common_padding_min">8dp</dimen>
     <dimen name="common_padding_mid">16dp</dimen>

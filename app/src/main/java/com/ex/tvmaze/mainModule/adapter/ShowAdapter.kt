@@ -8,10 +8,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.ex.tvmaze.R
 import com.ex.tvmaze.ShowApplication
 import com.ex.tvmaze.common.entities.shows.ShowEntity
 import com.ex.tvmaze.databinding.ItemShowBinding
-import org.jsoup.Jsoup
 
 class ShowAdapter(private var listener: OnClickListener) :
     RecyclerView.Adapter<ShowAdapter.ViewHolder>() {

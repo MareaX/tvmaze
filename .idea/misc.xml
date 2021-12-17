@@ -5,8 +5,12 @@
       <map>
         <entry key="..\:/Users/Ex/AndroidStudioProjects/tvmaze/app/src/main/res/layout-v26/fragment_show_info.xml" value="0.13958333333333334" />
         <entry key="..\:/Users/Ex/AndroidStudioProjects/tvmaze/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Ex/AndroidStudioProjects/tvmaze/app/src/main/res/layout/activity_recycler_view_episodes.xml" value="0.2341485507246377" />
+        <entry key="..\:/Users/Ex/AndroidStudioProjects/tvmaze/app/src/main/res/layout/fragment_episodes.xml" value="0.13958333333333334" />
         <entry key="..\:/Users/Ex/AndroidStudioProjects/tvmaze/app/src/main/res/layout/fragment_serie_info.xml" value="0.3484375" />
-        <entry key="..\:/Users/Ex/AndroidStudioProjects/tvmaze/app/src/main/res/layout/fragment_show_info.xml" value="0.25" />
+        <entry key="..\:/Users/Ex/AndroidStudioProjects/tvmaze/app/src/main/res/layout/fragment_show_info.xml" value="0.33" />
+        <entry key="..\:/Users/Ex/AndroidStudioProjects/tvmaze/app/src/main/res/layout/item_episode.xml" value="0.25554484088717455" />
+        <entry key="..\:/Users/Ex/AndroidStudioProjects/tvmaze/app/src/main/res/layout/item_season.xml" value="0.2341485507246377" />
         <entry key="..\:/Users/Ex/AndroidStudioProjects/tvmaze/app/src/main/res/layout/item_serie.xml" value="0.20108695652173914" />
         <entry key="..\:/Users/Ex/AndroidStudioProjects/tvmaze/app/src/main/res/layout/item_show.xml" value="0.2341485507246377" />
         <entry key="..\:/Users/Ex/AndroidStudioProjects/tvmaze/tvmaze/app/src/main/res/layout/activity_main.xml" value="0.33" />

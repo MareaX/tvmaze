@@ -1,6 +1,7 @@
 package com.ex.tvmaze.common.api
 
 import com.ex.tvmaze.common.entities.episodes.EpisodeEntity
+import com.ex.tvmaze.common.entities.season.SeasonEntity
 import com.ex.tvmaze.common.entities.shows.ShowEntity
 import com.ex.tvmaze.common.utils.Constants
 import retrofit2.Response
@@ -11,7 +12,10 @@ interface ShowApiService {
     @GET(Constants.END_POINT)
     suspend fun getShows():Response<List<ShowEntity>>
 
-    @GET(Constants.END_POINT + Constants.END_POINT_EPISODES)
-    suspend fun getEpisodes(@Path("id") id:Int):Response<List<EpisodeEntity>>
+    @GET(Constants.END_POINT + Constants.END_POINT_SEASONS)
+    suspend fun getSeasons(@Path("id") idShow:Int):Response<List<SeasonEntity>>
+
+    @GET(Constants.END_POINT_EPISODES)
+    suspend fun getEpisodes(@Path("id") idSeason:Int):Response<List<EpisodeEntity>>
 
 }

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_episode_card_height"
+    android:layout_marginHorizontal="@dimen/common_padding_min"
+    android:layout_marginTop="@dimen/common_padding_min">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/alterSecundaryLight"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgPhotoEpisode"
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="@dimen/common_padding_min"
+            android:layout_marginStart="@dimen/common_padding_large"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/description_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/llStrings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/common_padding_min"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgPhotoEpisode">
+
+            <TextView
+                android:id="@+id/tvTitleEpisode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/common_padding_less_min"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                tools:text="Titulo" />
+
+            <TextView
+                android:id="@+id/tvSeason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/common_padding_less_min"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?attr/textAppearanceBody2"
+                tools:text="@string/episode_season" />
+
+            <TextView
+                android:id="@+id/tvEpisodeNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/common_padding_less_min"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?attr/textAppearanceBody2"
+                tools:text="@string/episode_number" />
+
+            <TextView
+                android:id="@+id/tvDescriptionEpisode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/common_padding_less_min"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:textAppearance="?attr/textAppearanceBody2"
+                tools:text="Resumen" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

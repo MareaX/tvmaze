@@ -1,19 +1,14 @@
 package com.ex.tvmaze.common.entities.episodes
 
-data class EpisodeEntity (
+import com.ex.tvmaze.common.entities.same.Image
+import com.ex.tvmaze.common.entities.same.Links
+import com.ex.tvmaze.common.entities.same.Rating
 
-	val id : Int,
-	val url : String,
-	val name : String,
-	val season : Int,
-	val number : Int,
-	val type : String,
-	val airdate : String,
-	val airtime : String,
-	val airstamp : String,
-	val runtime : Int,
-	val rating : Rating,
-	val image : Image,
-	val summary : String,
-	val links : Links
+data class EpisodeEntity (
+	val id : Int = 0,
+	val name : String = "",
+	val season : Int = 0,
+	val number : Int = 0,
+	val summary : String = "",
+	val image: Image = Image("","")
 )

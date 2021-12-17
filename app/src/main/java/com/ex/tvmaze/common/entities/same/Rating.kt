@@ -1,4 +1,4 @@
-package com.ex.tvmaze.common.entities.shows
+package com.ex.tvmaze.common.entities.same
 
 data class Rating (
 

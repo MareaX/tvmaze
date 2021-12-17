@@ -1,4 +1,4 @@
-package com.ex.tvmaze.common.entities.episodes
+package com.ex.tvmaze.common.entities.same
 
 data class Image (
 

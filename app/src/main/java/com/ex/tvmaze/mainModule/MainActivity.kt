@@ -14,6 +14,9 @@ import com.ex.tvmaze.mainModule.adapter.ShowAdapter
 import com.ex.tvmaze.mainModule.viewModel.MainViewModel
 import com.ex.tvmaze.showInfoModule.ShowInfoFragment
 import dagger.hilt.android.AndroidEntryPoint
+import android.text.Editable
+import android.text.TextWatcher
+
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity(), OnClickListener {
@@ -31,6 +34,21 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         setContentView(mBinding.root)
 
         setupRecyclerView()
+
+        mBinding.etSearch.addTextChangedListener(object : TextWatcher {
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+                // ignore
+            }
+
+            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
+                // ignore
+            }
+
+            override fun afterTextChanged(s: Editable) {
+                mAdapter.filter.filter(mBinding.etSearch.text.toString())
+            }
+        })
+
     }
 
 
@@ -47,6 +65,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         mMainViewModel.responseShow.observe(this, { shows ->
             mBinding.progressBar.visibility = if (shows.isEmpty()) View.VISIBLE else View.GONE
             mAdapter.shows = shows
+            mAdapter.allShows = shows
         })
     }
 

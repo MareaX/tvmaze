@@ -1,4 +1,7 @@
-package com.ex.tvmaze.common.entities.season
+package com.ex.tvmaze.common.entities
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 data class SeasonEntity(
     val id: Int = 0,

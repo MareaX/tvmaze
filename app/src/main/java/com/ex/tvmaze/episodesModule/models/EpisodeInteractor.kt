@@ -2,8 +2,7 @@ package com.ex.tvmaze.episodesModule.models
 
 import android.util.Log
 import androidx.lifecycle.viewModelScope
-import com.ex.tvmaze.common.entities.episodes.EpisodeEntity
-import com.ex.tvmaze.common.entities.season.SeasonEntity
+import com.ex.tvmaze.common.entities.EpisodeEntity
 import com.ex.tvmaze.common.repository.ShowRepo
 import com.ex.tvmaze.episodesModule.viewModel.EpisodeViewModel
 import kotlinx.coroutines.launch

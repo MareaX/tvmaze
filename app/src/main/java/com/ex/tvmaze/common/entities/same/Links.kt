@@ -1,5 +1,5 @@
 package com.ex.tvmaze.common.entities.same
 
 data class Links (
-	val self : Self
+	val self : Self = Self()
 )

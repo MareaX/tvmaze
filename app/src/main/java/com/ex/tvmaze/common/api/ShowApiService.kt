@@ -1,8 +1,8 @@
 package com.ex.tvmaze.common.api
 
-import com.ex.tvmaze.common.entities.episodes.EpisodeEntity
-import com.ex.tvmaze.common.entities.season.SeasonEntity
-import com.ex.tvmaze.common.entities.shows.ShowEntity
+import com.ex.tvmaze.common.entities.EpisodeEntity
+import com.ex.tvmaze.common.entities.SeasonEntity
+import com.ex.tvmaze.common.entities.ShowEntity
 import com.ex.tvmaze.common.utils.Constants
 import retrofit2.Response
 import retrofit2.http.GET

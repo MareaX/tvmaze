@@ -3,11 +3,9 @@ package com.ex.tvmaze.episodesModule.viewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.ex.tvmaze.common.entities.episodes.EpisodeEntity
-import com.ex.tvmaze.common.entities.season.SeasonEntity
+import com.ex.tvmaze.common.entities.EpisodeEntity
 import com.ex.tvmaze.common.repository.ShowRepo
 import com.ex.tvmaze.episodesModule.models.EpisodeInteractor
-import com.ex.tvmaze.showInfoModule.model.ShowInfoInteractor
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

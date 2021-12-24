@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.ex.tvmaze.R
 import com.ex.tvmaze.ShowApplication
-import com.ex.tvmaze.common.entities.episodes.EpisodeEntity
+import com.ex.tvmaze.common.entities.EpisodeEntity
 import com.ex.tvmaze.databinding.ItemEpisodeBinding
 
 class EpisodeAdapter() : RecyclerView.Adapter<EpisodeAdapter.ViewHolder>() {
@@ -53,6 +53,7 @@ class EpisodeAdapter() : RecyclerView.Adapter<EpisodeAdapter.ViewHolder>() {
                 tvEpisodeNumber.text = if (episode.number != 0)
                     "${getString(holder, R.string.episode_number)} ${episode.number}" else "${getString(holder, R.string.episode_number)} Especial"
                 tvDescriptionEpisode.text = ShowApplication.html2text(episode.summary)
+                var image = episode.image.original
                 if (episode.image !== null )
                     Glide.with(mContext)
                         .load(episode.image.original)

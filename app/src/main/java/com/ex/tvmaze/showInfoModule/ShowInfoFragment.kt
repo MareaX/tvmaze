@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.ex.tvmaze.R
 import com.ex.tvmaze.ShowApplication
-import com.ex.tvmaze.common.entities.season.SeasonEntity
+import com.ex.tvmaze.common.entities.SeasonEntity
 import com.ex.tvmaze.databinding.FragmentShowInfoBinding
 import com.ex.tvmaze.episodesModule.EpisodesFragment
 import com.ex.tvmaze.mainModule.MainActivity
@@ -23,7 +23,7 @@ import com.ex.tvmaze.showInfoModule.viewModel.ShowInfoViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class ShowInfoFragment : Fragment(),OnClickSeasonListener {
+class ShowInfoFragment : Fragment(), OnClickSeasonListener {
 
     lateinit var mBinding: FragmentShowInfoBinding
     private val mShowInfoViewModel: ShowInfoViewModel by viewModels()
@@ -47,7 +47,10 @@ class ShowInfoFragment : Fragment(),OnClickSeasonListener {
         mBinding.recyclerViewEpisodes.apply {
             setHasFixedSize(true)
             layoutManager =
-                GridLayoutManager(mBinding.root.context, resources.getInteger(R.integer.main_columns))
+                GridLayoutManager(
+                    mBinding.root.context,
+                    resources.getInteger(R.integer.main_columns)
+                )
             adapter = mShowSeasonAdapter
         }
         return mBinding.root
@@ -85,15 +88,19 @@ class ShowInfoFragment : Fragment(),OnClickSeasonListener {
         with(mBinding) {
             tvTitle.text = bundle.getString(getString(R.string.ShowEntity_name))
             tvDescription.text = bundle.getString(getString(R.string.ShowEntity_summary))
-            tvGeneros.text = "${getString(R.string.generos_info)} ${bundle.getString(getString(R.string.ShowEntity_genres))}"
-            rating.rating = (bundle.getFloat(getString(R.string.ShowEntity_rating))/2)
-            tvDate.text = "${getString(R.string.date_info)} ${bundle.getString(getString(R.string.ShowEntity_premiered))}"
-            tvWebPage.text = "${getString(R.string.webpage_info)} ${bundle.getString(getString(R.string.ShowEntity_url))}"
-            Glide.with(this@ShowInfoFragment)
-                .load(bundle.getString(getString(R.string.ShowEntity_image)))
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .centerCrop()
-                .into(imgPhotoInternal)
+            tvGeneros.text =
+                "${getString(R.string.generos_info)} ${bundle.getString(getString(R.string.ShowEntity_genres))}"
+            rating.rating = (bundle.getFloat(getString(R.string.ShowEntity_rating)) / 2)
+            tvDate.text =
+                "${getString(R.string.date_info)} ${bundle.getString(getString(R.string.ShowEntity_premiered))}"
+            tvWebPage.text =
+                "${getString(R.string.webpage_info)} ${bundle.getString(getString(R.string.ShowEntity_url))}"
+            if (ShowApplication.haveInternet)
+                Glide.with(this@ShowInfoFragment)
+                    .load(bundle.getString(getString(R.string.ShowEntity_image)))
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .centerCrop()
+                    .into(imgPhotoInternal)
         }
     }
 
@@ -121,7 +128,8 @@ class ShowInfoFragment : Fragment(),OnClickSeasonListener {
     private fun launchEpisodesFragment(seasonEntity: SeasonEntity) {
         val data = Bundle()
         data.putInt(getString(R.string.SeasonEntity_id), seasonEntity.id)
-        val seasonName = if (seasonEntity.name.isBlank()) "Temporada ${seasonEntity.number}" else seasonEntity.name
+        val seasonName =
+            if (seasonEntity.name.isBlank()) "Temporada ${seasonEntity.number}" else seasonEntity.name
         data.putString(getString(R.string.SeasonEntity_title), seasonName)
         val fragment = EpisodesFragment()
         fragment.arguments = data

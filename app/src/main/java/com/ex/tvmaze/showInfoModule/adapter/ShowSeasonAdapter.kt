@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.ex.tvmaze.common.entities.season.SeasonEntity
+import com.ex.tvmaze.common.entities.SeasonEntity
 import com.ex.tvmaze.databinding.ItemSeasonBinding
 
 class ShowSeasonAdapter(private var listener: OnClickSeasonListener) :

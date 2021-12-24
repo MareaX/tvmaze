@@ -1,6 +1,5 @@
 package com.ex.tvmaze.mainModule.adapter
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -11,8 +10,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.ex.tvmaze.ShowApplication
-import com.ex.tvmaze.common.entities.shows.ShowEntity
+import com.ex.tvmaze.common.entities.ShowEntity
 import com.ex.tvmaze.databinding.ItemShowBinding
 
 

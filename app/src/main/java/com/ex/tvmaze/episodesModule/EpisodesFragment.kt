@@ -22,7 +22,6 @@ class EpisodesFragment : Fragment() {
     private val mEpisodeViewModel: EpisodeViewModel by viewModels()
     private var mActivity: MainActivity? = null
     private lateinit var mEpisodeAdapter: EpisodeAdapter
-    private lateinit var bundle: Bundle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
